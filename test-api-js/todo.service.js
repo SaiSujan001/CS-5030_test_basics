@@ -34,18 +34,23 @@ class todoservice{
         
     }
 
-    delete_todo(id){
+    delete_todo(){
         // Your code here
-        deleteElement = this.todos.filter(element => element.title != 'T1');
-        console.log(deleteElement);
+
+    //     // deleteElement = this.todos.todo.filter(element => element.title != 'T1');
+    // //     this.todos.todo.pop(id);
+    // //    deletedElement = this.todos.todo[filter(element => element.title = 'T2')]
+    // //         // element => element.title != 'T1'
+    // //     return deletedElement;
+    // delete this.todos.todo.filter(element => element.title = "T2");
+    // return 
+    this.todos.todo.pop();
+    const remainEle= this.todos.todo[this.todos.todo.length-1];
+    return remainEle;
     }
 
-    update_todo(id, todo){
-        // Your code here
-        findobject = this.todos.findIndex( search => search.title == "T1");
-        this.todos[findobject].title = "T12";
-        console.log(this.todos[findobject])
-
+    update_todo(id){
+       
     }
 }
 
