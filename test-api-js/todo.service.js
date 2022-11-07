@@ -50,7 +50,16 @@ class todoservice{
     }
 
     update_todo(id){
-       
+       // Your code here
+        // findobject = this.todos.todo.findIndex( search => search.title == "T1");
+        // this.todos.todo[findobject].title = "T12";
+        // console.log(this.todos.todo[findobject]);
+        const arrayIndex = this.todos.todo.findIndex((ele => ele.title = id ));
+        this.todos.todo[arrayIndex].done = true;
+        
+        // this.todos.todo[arrayIndex].id2 = "T12";
+        return this.todos.todo[arrayIndex];
+
     }
 }
 

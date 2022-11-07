@@ -33,7 +33,10 @@ describe('todo test suite', () => {
         expect(todo_service.delete_todo()).toEqual({"description": "D1", "done": false, "title": "T3"});
     });
 
-    
+    test("update_todo", () => {
+        expect(todo_service.update_todo("T1")).toEqual({"description": "D1", "done": true, "title": "T1"});
+    });
+
 
 
 });
